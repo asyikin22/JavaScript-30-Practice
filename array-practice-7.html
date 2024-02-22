@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Practice 2</title>
+</head>
+<body>
+
+    <strong><p>Check out the console to see what's going on! :D</p></strong>
+
+    <script>
+         const people = [
+      { name: 'Asyikin', year: 1990 },
+      { name: 'Austin', year: 1995 },
+      { name: 'Liam', year: 1970 },
+      { name: 'Leona', year: 2015 },
+      { name: 'Graham', year: 1975 }
+    ];
+
+    const comments = [
+      { text: 'Love it!', id: 111111 },
+      { text: 'Amazeballs', id: 222222 },
+      { text: 'You are the best person in the world', id: 333333 },
+      { text: 'Rice is my fav food ever', id: 444444 },
+      { text: 'It is amazing!', id: 555555 }
+    ];
+
+    //is at least one person is 35?
+    function kiraUmur (year) {
+        const currentYear = (new Date()).getFullYear();
+        const age = currentYear - year;
+        return age;
+    }
+       
+    const modifiedArray = people.map(person =>kiraUmur(person.year))        // 34, 29, 54, 9, 49
+    const orangMuda = modifiedArray.some(age => age > 35);
+
+    console.log(modifiedArray)
+    console.log(orangMuda)
+
+    //is everyone 18?
+
+    const semua18 = modifiedArray.every(age => age >= 18 );
+    console.log(semua18)
+
+    //find a comment that has id:111111
+
+    const cariKomen = comments.find(comment => comment.id === 111111);      // using array method and store result in variable
+
+    console.table(cariKomen)
+
+   // find a comment that has id: 555555
+   const cariKomen2 = comments.find(function(comment) {                     // using anonymous function and conditional statement
+    if(comment.id === 555555) {
+        return true;
+    }
+   })
+
+   console.table(cariKomen2)
+
+   //find id that has comment 'Rice is my fav food ever'
+   const cariID = comments.find(comment => comment.text === 'Rice is my fav food ever')
+   console.log(cariID)
+
+   // delete a comment that has this id:222222
+   
+   const indeks = comments.findIndex(comment => comment.id === 222222);
+   console.log(indeks);
+   
+  if (indeks !== -1) {
+    delete comments[indeks];
+  }
+
+  console.table(comments);
+   
+
+    </script>
+</body>
+</html>
