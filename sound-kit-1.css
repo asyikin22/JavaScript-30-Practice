@@ -1,0 +1,38 @@
+html, body {
+    margin: 0; 
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.keys {
+    display: flex;
+    flex: 1;                       /*flex item will grow and consume any available space along main axis*/
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.key {
+    border: 0.5rem solid pink;
+    border-radius: 0.5rem;
+    margin: 1rem;                        /*between keys*/
+    font-size: 2rem;
+    padding: 1rem 0.5rem;
+    transition: all 0.05s ease;         /*THIS IS THE MOST IMPORTANT ELEMENT TO ANIMATE THE KEY*/
+    width: 8rem;
+    text-align: center;
+    color: blue;
+    background: lightgoldenrodyellow;
+}
+
+kbd {
+    display: block;
+    font-size: 5rem;
+    color: green;
+}
+
+.playing {                               /*THIS IS THE MOST IMPORTANT ELEMENT TO ANIMATE THE KEY*/
+    transform: scale(1.5);
+    border-color: green;
+    box-shadow:  0 0 1rem #84ff00;
+}
