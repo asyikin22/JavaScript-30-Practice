@@ -1,0 +1,53 @@
+html {
+    text-align: center;
+    color: red;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    background: yellow;
+    width: 35rem;
+    height: 35rem;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.clock-face {
+    position: relative;                 /*any absolutely positioned child elements will be positioned relative to this container*/
+    width: 100%;                        /*100% for wieght & height to ensure it occupies 100% of its parents elements & heigh, filling its container*/
+    height: 100%;
+    transform: translateY(-3px);        /*-3px, element moved 3px downwards*/
+}
+
+.needle {
+    width: 50%;
+    height: 6px;
+    background: green;
+    font-size:30px;
+    position: absolute;                 /*needle is positioned relative to the nearest positioned ancestor*/
+    top: 50%;
+    transform-origin: 100%;             /*this will change the pivot point to the right hand side of the needle, not center*/
+    transform: rotate(90deg);           /*this will set the needles to 90degree*/
+}
+
+.hours-needle, .minutes-needle {
+    text-align: left;
+}
+
+footer {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
