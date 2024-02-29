@@ -19,7 +19,40 @@
 * JS file:
   1. Create a function playSound. Note that when the audio is played, the key will scale up and a green background will appear to highlight that the key is indeed pressed. 
   2. Create a function to remove the transition. This is to return the key to its original state when it's not clicked or when the audio is no longer playing. 
+
+# Clickity Clock! (Practice 2)
+
+* These files demonstrate how I built a real-time clock in which the needles will rotate according to what time it currently is.
+* Each needle of the clock will point to current time, hours and seconds.
+* I have embedded a digital clock I got from https://www.clocklink.com/gallery/view/html5-048 to help you to visualize and see how the needles correspond to current Malaysian time.
+
+**HTML File** <br>
+1. Create one clock div
+2. Create the face of the clock with another div
+3. Create another 3 div that represents the needles of clock
+   * class = hours-needle
+   * class = hours-needle
+   * class = hours-needle
   
+**CSS File** <br>
+1. Style the body, .clock, .clock-face, .needle, 
+2. The 'transform' property will interact with javascript and give its functionality where it will get the needles to rotate.
+3. transform-origin is set to 100% so the pivot point will change to the right hand side of the needle instead of its center. 
+4. I have set the text on the needle that represent hours and minutes to the far left so you can see which needles represent hours, minutes and seconds as they rotate and the time progresses.
+
+**JavaScript File** <br>
+1. Create 3 variables for hours, minutes and seconds.
+   * Get elements with classes of hours, minutes and seconds using query selector ad assign them to their variables.
+3. Create a  setDate function
+   * 'now' is created to get the current time and date
+   * getSeconds, getMinutes and getHours are method of Date object to get current seconds, minutes and hours
+4. Call the setDate function every second using setInterval function.
+5. Style.transform property is used to rotate the needle by the calculated number of degrees
+   * It is set using template literal - it must be wrapped inside backticks ``
+6. How to get the degrees for rotation of seconds, minutes and hours:
+   * Seconds is divided by 60 to get percentage of the current minute
+   * Multiplied by 360 to get the degrees
+   * 90 is added as an offset to align it correctly with transformation property in CSS (So it will go full 360 as the time progresses)
   
 # Array (Practice 4)
 * This file demonstrates how I use array method to manipulate data. Those methods are:
@@ -29,6 +62,7 @@
    4. Calculate how many years did all the inventors live by using __'reduce'__ method.
    5. Sort inventors by the years they have lived from the oldest to the youngest using __'sort'__ method
    6. Sum up the instances of each item in the data using __'reduce'__ method. It will tally up the total of each item.
+
  
 # Array (Practice 7)
 * This file demonstrates more methods in manipulating data in array. Those methods are:
