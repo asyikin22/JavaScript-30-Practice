@@ -1,0 +1,71 @@
+:root {
+    --primary-color: lightpink;
+    --secondary-color: lightyellow;
+    --text-color: rgb(128, 0, 75);
+    --base: #2cded5;
+    --spacing: 5px;
+    --blur: 10px;
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+.container {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: var(--secondary-color) ;
+    color: var(--text-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 20px;
+    cursor:pointer;
+}
+
+.container.dark {
+    --primary-color: darkgray;
+    --secondary-color: #333;
+    --text-color: white;
+}
+
+/*styling for second part*/
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.controls {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+input {
+    width: 200px;
+}
+
+.image {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    border-radius: 20px;
+    padding: var(--spacing);
+    background: var(--base);
+    filter:blur(var(--blur));
+}
+
+.highlight {                    /*this is to change color of 'JavaScript' in h2*/
+    color: var(--base);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher</title>
+    <link rel="stylesheet" href="css-var-3.css">
+</head>
+<body>
+
+    <!--FIRST PART-->
+    <div class="container">
+        <h1>Hello, welcome to my web page</h1>
+        <button id="themeToggle">Toggle Theme</button>
+    </div>
+
+
+    <!--SECOND PART-->
+
+    <h2>Use CSS Variable with <span class="highlight">JavaScript</span></h2>
+
+    <div class="controls">
+        <label for="spacing">Spacing</label>
+        <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+        <label for="blur">Blur</label>
+        <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+        <label for="base-color">Background</label>
+        <input id="base-color" type="color" name="base" value="#2cded5">
+    </div>
+
+    <div class="image">
+        <img src="images/flowers.jpg">
+    </div>
+
+    
+
+    <script src="css-var-3.js"></script>
+</body>
+</html>
