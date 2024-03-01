@@ -54,6 +54,25 @@
    * Multiplied by 360 to get the degrees
    * 90 is added as an offset to align it correctly with transformation property in CSS (So it will go full 360 as the time progresses)
   
+# CSS Variables (Practice 3)
+These codes demonstrate how we can use CSS variable and adds functionality in JavaScript. So what is CSS Variables?
+* It contains and stores specific values to be used throughout the document
+* Root selector (:root) is used to define the variable globally
+
+I have separated the files into two parts. I have clearly highlighted it in the html, css and js file to make sure you are not confused when reading them and to help you identify which is which:
+* The first part: It shows how user can change the theme of the heading by toggling the theme button
+    1. Create HTML file and style it accordingly, add root selector in CSS that defines the primary color, secondary color and text color of the heading 
+    2. JS File: Retrieve references to the HTML button element, add event listener that will change theme color when button is clicked. 
+* The second part: It shows how we can adjust the spacing, blurriness and background color of an image based on the value inputted by users.
+    1. Wrap the word 'javascript' in span - this is the part that will change color when user change the base color
+    2. cretae a div with class 'control', within it, create 3 label element and 3 input element for spacing, blur effect and background color. Add anotehr div for image
+    3. Define the variable padding, background color and blur effect in CSS file. don't forget to apply variable on the word 'javascript'
+    4. JS file:
+       * Create a variable that select all inputs in HTML element
+       * Add event listener that listens for change of value in the input
+       * Define the handleUpdate function that will update the CSS variable when value of the input changes. 
+     
+
 # Array (Practice 4)
 * This file demonstrates how I use array method to manipulate data. Those methods are:
    1. Filter people who were born in the 1500 using __'filter'__ method
