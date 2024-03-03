@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="image-gallery.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>Image gallery</h1>
+    </header>
+
+    <div class="full-image" id="fullImageBox">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg" id="fullImage">
+      <span onclick="closeFullImage()">X</span>
+    </div>
+
+    <div class="gallery">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg" alt="kucing tidur" onclick="openFullImage(this.src)">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg" alt="kucing terlentang" onclick="openFullImage(this.src)">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg" alt="kucing termenung" onclick="openFullImage(this.src)">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg" alt="kucing snuggle" onclick="openFullImage(this.src)">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg" alt="kucing shocked" onclick="openFullImage(this.src)">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg"alt="kucing twins" onclick="openFullImage(this.src)">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg" alt="kucing belang" onclick="openFullImage(this.src)">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg"alt ="kucing oyen" onclick="openFullImage(this.src)">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg" alt="kucing hitam putih" onclick="openFullImage(this.src)">
+    </div>
+
+    <footer>
+      Made by Asyikin22 &copy; 2024
+    </footer>
+
+  <script src="image-gallery.js"></script>
+  </body>
+</html>
