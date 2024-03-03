@@ -82,6 +82,28 @@ I have separated the files into two parts. I have clearly highlighted it in the 
    5. Sort inventors by the years they have lived from the oldest to the youngest using __'sort'__ method
    6. Sum up the instances of each item in the data using __'reduce'__ method. It will tally up the total of each item.
 
+ # Image Gallery (Practice 5)
+* The codes in this file demonstrate how we can manipulate images on using JavaScript and CSS.
+* I am utilising 'onclick' to handle click event but bear in mind, addEventListener is more preferred in modern JavaScript despite the fact that both delivering the same result.
+* So feel free to use other method in your codes, i might return to this file in the future and change it at some point lol. 
+* So what can we do with it?
+  1. When mouse hovers over the images, they will scale down and rotate a little bit - this is achieved through transfrom property.
+  2. When we click on a particular image, it will be displayed individually on the center of the webpage, while the other images remain in the background.
+  3. When we click the 'x' button on the top right of the image, the image will be closed.
+
+**HTML**
+1. Create one div for container of image that will display individually when clicked and a span element that will act as a 'button' to close the image, add onclick attribute to it.
+2. Add multiple images of your choosing in a container with class gallery, add onclick attribute to each of them.
+
+**CSS**
+1. I used flex to display the images
+2. The key property that supports animation is 'transform' property. 
+
+**JavaScript**
+1. Retrieve refrence to container element and store it in variable called fullImageBox
+2. Retrieve refrence to individual image element and store it in variable called fullImage. This is the one that will display image when clicked.
+3. Create a function openFullImage with parameter 'pic'. It will display the fulll image when called.
+4. Create a function to hide image when when button x is clicked. Set the display to none which will effctively hide the image element from being displayed. 
  
 # Array (Practice 7)
 * This file demonstrates more methods in manipulating data in array. Those methods are:
