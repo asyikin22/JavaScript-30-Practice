@@ -1,0 +1,45 @@
+html {
+    background: lightblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: blue;
+}
+
+.container {
+    max-width: 350px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    color: green;
+}
+
+.task:last-child {
+    border-bottom: none;       /*this will remove the border on the bottom of the last task*/
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+    margin: 20px;
+}
+
+p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    border-left: 1px solid grey;
+}
+
+input:checked + p {
+    background: peachpuff;
+    text-decoration: line-through;
+    width: 100%;
+}
