@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to utilise Dev Tool
+
+    </title>
+</head>
+<body>
+    
+    <h3>1 - Click "Hello World" below and see what happens! &#x1F642; </h3>
+    <p onclick="styleMe()">Hello World!</p>
+
+    <h3>2 - Check out the console to see what's going on in the background 🎉 </h3>
+
+
+    <script>
+
+        function styleMe() {
+            const p = document.querySelector('p');
+            p.style.color = "blue";
+            p.style.fontSize = "50px";
+        }
+
+    //regular
+    console.log('hello')
+
+    //interpolated 
+    const name = "Asyikin"
+    const age = 33;
+
+    console.log(`My name is ${name} and I am ${age} years old. `);
+
+    //styled
+    console.log('%c I am cool as fuck', 'font-size:20px; color:green; background:pink;');
+
+    //warning!
+    console.warn('Something is not right!');
+
+    //error
+    console.error('oh nauur')
+
+    //info
+    console.info(`mitochondria is the powerhouse of the cell`)
+
+    //testing - check if things are true, it will only display message if it's wrong.
+    console.assert(1 === 2, `that is wrong, my child`)
+
+    //clearing - turn it to comment bcs it will clear the above files
+    // console.clear();
+
+    //Viewing DOM elements - declare what p is before calling it with console.log
+    const p = document.querySelector('p');
+    console.log(p);
+    console.dir(p);
+
+    //grouping together
+    
+    const students = [{name: 'Anna', age: 10}, {name: 'Lucas', age: 8}, {name: 'Peter', age: 5}];
+    students.forEach (student => {
+        console.groupCollapsed(`${student.name}`)
+        console.log(`this is ${student.name}`);
+        console.log(`${student.name} is ${student.age} years old`);
+        console.groupEnd(`${student.name}`);
+    })
+
+      //table
+      console.table(students)
+
+    //counting - it counts how many times something was called
+    console.count('blue');
+    console.count('blue');
+    console.count('red');
+    console.count('blue');
+    console.count('red');
+
+    //timing
+    // console.time('fetching data');
+    // fetch('https://api.github.com/users/wesbos')
+    //     .then(data => data.json())
+    //     .then(data => {
+    //         console.timeEnd('fetching data');
+    //         console.log(data);
+    //     });
+
+  
+
+    </script>
+</body>
+</html>
