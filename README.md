@@ -126,6 +126,9 @@ I have summarized the breakdown of the code lines in the following table to help
 ![image](https://github.com/asyikin22/JavaScript-30-Practice/assets/148519441/db2ba440-218d-49c2-8973-64a8bdb9cf3e)
 
 
+# Developer Tools Tricks (Practice 9)
+Check out the HTML file and see how you can play around wiht things in your console 😊
+
 
       
        
