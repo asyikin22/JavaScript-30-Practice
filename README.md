@@ -1,4 +1,3 @@
-
 # Animal Sound Kit (Practice 1)
 * This fun little project demosntrate how a user can play with animal sound kit. When a key is pressed on the keyboard, this will happen:
      * Animal sound associated with that key will be played: cat, cow, dog, horse, lion sheep (Keys: A, S, D, F, G, H)
@@ -72,7 +71,6 @@ I have separated the files into two parts. I have clearly highlighted it in the 
        * Add event listener that listens for change of value in the input
        * Define the handleUpdate function that will update the CSS variable when value of the input changes. 
      
-
 # Array (Practice 4)
 * This file demonstrates how I use array method to manipulate data. Those methods are:
    1. Filter people who were born in the 1500 using __'filter'__ method
@@ -116,7 +114,19 @@ I have separated the files into two parts. I have clearly highlighted it in the 
    5. Find ID that has commet 'Rice is my fav food ever' using __'find'__ method
    6. Delete a comment that has id:222222 using __'delete'__ method. The new array will be reflected in the console - that particular comment is no longer there in the list
  
-  
+# Checkbox - onclick & Event Listener (Practice 10) 
+
+**SUMMARY**: In two separate files, I demonstrate how we can use 'onclick' property and 'add event listener' method in JavaScript to manipulate our checkboxes on our webpage<br>
+
+**CHECKBOX - onclick**: When 'submit' button is clicked, it will check if checkboxes or radio buttons are checked, it will then display appropriate messages. 
+
+**CHECKBOX - event listener**: When you press the 'shift' key on your keyboard and click on one checkbox - and while still pressing shift key - click on another checkbox, it will automicatically check all the checkboxes in between them.
+
+I have summarized the breakdown of the code lines in the following table to help you understand what happens in the background and how JavaScript gives rise to the functionality of the webpage
+![image](https://github.com/asyikin22/JavaScript-30-Practice/assets/148519441/db2ba440-218d-49c2-8973-64a8bdb9cf3e)
+
+
+
       
        
 
